@@ -56,8 +56,10 @@ button, input{
     color: var(--second-text-color);
 }
 .login__textbox-form>input{
-    width: 100%;
-    padding: 12px 321px 12px 15px;
+    width: 380px;
+    height: 42px;
+    padding-left: 15px;
+    /* padding: 12px 321px 12px 15px; */
     border: 1px solid var(--second-text-color);
     border-radius: 4px ;
 }
@@ -69,7 +71,8 @@ button, input{
 }
 .login__textbox>button{
     background: var(--button-main-bg-color);
-    padding: 13px 192.51px;
+    width: 380px;
+    padding: 12px;
     color: var(--text-white-color);
     border-radius: 4px;
     cursor: pointer;
@@ -78,7 +81,7 @@ button, input{
     text-transform: uppercase;
 }
 .login__signin{
-    width: 60%;
+    width: 45%;
     display: flex;
     justify-content: center;
     gap: 6px;
@@ -109,10 +112,10 @@ button, input{
         flex: 4;
     }
     .login__textbox-form>input{
-        padding: 12px 180px 15px 12px;
+        width: 350px;
     }
     .login__textbox>button{
-        padding: 13px 120px;
+        width: 350px;
     }
     .login__signin{
         width: 100% ;
@@ -136,4 +139,13 @@ button, input{
     .login__textbox>p {
         line-height: 25px;
     };
+}
+
+@media (max-width:580px){
+    .login__textbox-form>input{
+        width: 300px;
+    }
+    .login__textbox>button{
+        width: 300px;
+    }
 }
